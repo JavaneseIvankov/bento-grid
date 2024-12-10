@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/JavaneseIvankov/bento-grid/tree/answer-main)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Repo URL](https://github.com/JavaneseIvankov/bento-grid/tree/answer-main)
+- Live Site URL: [Live Site](https://bento-grid-five-khaki.vercel.app/)
 
 ## My process
 
