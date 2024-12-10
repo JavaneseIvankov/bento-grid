@@ -1,0 +1,207 @@
+:root {
+   --purple-100: hsl(254, 88%, 90%);
+   --purple-500: hsl(256, 67%, 59%);
+   --yellow-100: hsl(31, 66%, 93%);
+   --yellow-500: hsl(39, 100%, 71%);
+   --white: hsl(0, 0%, 100%);
+   --black: hsl(0, 0%, 7%);
+}
+
+@font-face {
+   font-family: 'DMSans';
+   src: url('./assets/fonts/DMSans-VariableFont_opsz\,wght.ttf');
+   font-weight: 400;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'DMSans';
+   src: url('./assets/fonts/DMSans-VariableFont_opsz\,wght.ttf');
+   font-weight: 500;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'DMSans';
+   src: url('./assets/fonts/DMSans-Italic-VariableFont_opsz\,wght.ttf');
+   font-weight: 400;
+   font-style: italic;
+}
+
+@font-face {
+   font-family: 'DMSans';
+   src: url('./assets/fonts/DMSans-Italic-VariableFont_opsz\,wght.ttf');
+   font-weight: 500;
+   font-style: italic;
+}
+
+* {
+   font-family: 'DMSans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   line-height: 0.85;
+}
+
+p {
+   font-size: 18px;
+}
+
+.font-m {
+   font-size: clamp(0.6rem, 1.5vw, 1.8rem);
+}
+
+.font-l {
+   font-size: clamp(1rem, 2.3vw, 3.4rem);
+   font-weight: 500;
+   letter-spacing: -2px;
+}
+
+.font-xl {
+   font-size: clamp(1rem, 3.8vw, 4.2rem);
+   font-style: normal;
+   letter-spacing: -2px;
+   font-weight: 500;
+}
+
+.font-xxl {
+   font-size: clamp(1.2rem, 5vw, 6rem);
+   font-style: normal;
+   letter-spacing: -2%;
+   font-weight: 500;
+}
+
+
+.italic {
+   font-style:italic;
+}
+
+
+h2 {
+   font-size: 3rem;
+   font-style:normal;
+}
+
+body {
+   min-height: 120vh;
+}
+
+
+.container {
+   width: 90%;
+   margin: auto;
+   max-width: 1920px;
+   display: grid;
+   aspect-ratio: 4/3;
+   grid-template-rows: repeat(14, 1fr);
+   grid-template-columns: repeat(12, 1fr);
+   gap: 2%;
+}
+
+.bento-item {
+   border-radius: 15px;
+   background-color: var(--yellow-100);
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+   padding: 10%;
+}
+
+.bento-item  * {
+   flex-grow: 0;
+}
+
+#create-post {
+   grid-area: 1 / 1 / 8 / 4;
+   gap: 10%;
+   padding-block-start: 20%;
+}
+
+
+#create-post .italic{
+   color: var(--purple-500);
+}
+
+#ai-content {
+   grid-area: 8 / 1 / 15 / 4;
+   gap: 15%;
+   background-color: var(--yellow-500);
+}
+
+#five-stars {
+   grid-area: 1 / 4 / 7 / 10;
+   text-align: center;
+   color: var(--white);
+   background-color: var(--purple-500);
+   gap: 10%;
+}
+
+#five-stars img {
+   max-width: 40%;
+   margin-left: 50%;
+   translate: -50%;
+}
+
+#five-stars #ten-x {
+   color: var(--yellow-500);
+}
+
+
+#multiple-platforms {
+   grid-area: 7 / 4 / 11 / 7;
+   gap: 10%;
+   background-color: var(--white);
+}
+
+#multiple-platforms p {
+   max-width: 80%;
+}
+
+
+#multiple-platforms img {
+   padding-block-end: 5%;
+   transform: scale(1.5) translate(18%, 5%);
+}
+
+#audience-growth {
+   grid-area: 11 / 4 / 15 / 7;
+   gap: 10%;
+   background-color: var(--white);
+}
+
+#consistent-schedule {
+   grid-area: 7 / 7 / 11 / 10;
+   gap: 10%;
+   background-color: var(--yellow-500);
+}
+
+#schedule-posts {
+   grid-area: 1 / 10 / -5 / -1 ;
+   background-color: var(--purple-100);
+   gap: 5%;
+   padding-block-start: 20%;
+}
+
+#schedule-posts img {
+   padding-block: 30%;
+   transform: scale(1.6) translateX(18%);
+}
+
+
+#grow-followers {
+   padding: 0;
+   grid-area: 11 / 7 / -1 / -1;
+   background-color: var(--purple-500);
+   color: var(--white);
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 5%;
+   padding-inline: 5%;
+}
+
+
+#grow-followers p {
+   text-justify: center;
+}
+
+#grow-followers img {
+   height: 80%;
+}
